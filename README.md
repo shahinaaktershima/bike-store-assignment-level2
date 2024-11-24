@@ -42,9 +42,9 @@ Make sure you have the following installed:
 yarn install
 
 # Create a .env file in the root directory and add the following:
-PORT=5000
-DATABASE_URL=mongodb+srv://BIKE_STORE:bikestore@cluster0.hfsk54e.mongodb.net/bike-collection?retryWrites=true&w=majority&appName=Cluster0
-NODE_ENV=development
+- PORT=5000
+- DATABASE_URL=mongodb+srv://BIKE_STORE:bikestore@cluster0.hfsk54e.mongodb.net/bike-collection?retryWrites=true&w=majority&appName=Cluster0
+- NODE_ENV=development
 # then run 
 npm run build
 npm start
