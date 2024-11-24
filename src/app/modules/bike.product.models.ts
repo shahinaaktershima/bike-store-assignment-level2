@@ -15,7 +15,7 @@ const ProductSchema: Schema<Product> = new Schema<Product>({
     inStock: { type: Boolean, required: true },
     createdDate: { type: Date, default: Date.now }, // Automatically sets the current date
     updatedDate: { type: Date, default: Date.now }
-  },
+  }
     
 );
 

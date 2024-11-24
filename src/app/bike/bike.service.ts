@@ -15,6 +15,12 @@ const getSingleBikeFromDB=async(_id:string)=>{
   const result = await Productmodel.findOne({_id})
   return result
 }
+// deleteone by id
+const deleteOneProduct=async(_id:string)=>{
+  const result=await Productmodel.findOne({_id}).deleteOne({_id})
+  // const deletedata=result?.deleteOne();
+  return result ;
+}
 export const bikeServices={
-    createBikeProductIntoDB,getAllBikeFromDB,getSingleBikeFromDB
+    createBikeProductIntoDB,getAllBikeFromDB,getSingleBikeFromDB,deleteOneProduct
 }
