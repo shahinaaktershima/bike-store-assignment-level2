@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+  
     "start:prod": "node ./dist/server.js",
     "prettier:fix": "npx prettier --write src",
     "format": "format --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",

@@ -1,3 +1,4 @@
+import { Types } from "mongoose";
 
 // Enum for Bike Categories
  export enum BikeCategory {
@@ -22,9 +23,10 @@
   
   // Order Interface
   export type Order ={
-    email: string;           // Email address of the customer
-    product: string;         // The ObjectId of the bike (referencing Product)
-    quantity: number;        // The quantity of the ordered bike
-    totalPrice: number;      // Total price (product price * quantity)
+    email: string;              // Email address of the customer
+    product: string;    
+    quantity: number;           // The quantity of the ordered bike
+    totalPrice: number;  // Total price (product price * quantity)
+    createdDate:  Date, // Automatically sets the current date
+    updatedDate:  Date,//       
   }
-  
