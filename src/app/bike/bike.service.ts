@@ -18,7 +18,7 @@ const getSingleBikeFromDB=async(_id:string)=>{
 }
 // deleteone by id
 const deleteOneProduct=async(_id:string)=>{
-  const result=await Productmodel.findByIdAndDelete({_id})
+  const result=await Productmodel.findOneAndDelete({_id})
   // const deletedata=result?.deleteOne();
   return result ;
 }

@@ -71,6 +71,8 @@ const deleteONEbike=async(req:Request,res:Response)=>{
     try{
         const { productId } = req.params;
         const deletedData =await bikeServices.deleteOneProduct(productId)
+        console.log(deletedData);
+        
        
             res.status(200).json({
                 message: "Bike deleted successfully",
